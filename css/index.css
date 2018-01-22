@@ -1,0 +1,136 @@
+/* Element css starts here */
+    body{
+    background-image:url("http://www.seerinteractive.com/wp-content/uploads/2014/12/Seer-Blog-event-tracking-explained-1440x700.jpg");
+    background-size: 100%;
+    position: absolute;
+    }
+    h1, 
+    h2,
+    h3, 
+    h4, 
+    h5, 
+    h6, 
+    p,
+    button,
+    a {
+        font-family: poppins;
+        color: black
+    } 
+    footer{
+        margin-bottom: 0px;
+    }
+
+
+/* Class css starts here */
+    .jumbotron{
+        background-color: #FF4500;
+        margin-bottom: 10rem;
+    }
+
+
+    .embeded-video{
+        position: relative;
+        left:20rem;
+    }
+    .navigation-button{
+        margin-right: 5rem;
+        margin-left: 5rem;
+        background-color: aliceblue;
+    }
+
+    .project-img{
+        max-height: 200px;
+        max-width: 200px;
+        border-radius: 10%;
+        transition: smooth;
+    }
+    .project-img:hover{
+        transform: scale(1.2);
+    }
+    .project-item{
+        position: relative;
+        display: inline-block;
+
+    }
+
+    
+    .project-item h4{
+        position: relative;
+        text-align: center;
+        margin-top: 2rem;
+        left: -3rem;
+        width: 18rem;
+    }
+    
+    .list-o-projects {
+        margin-top: 2rem;
+    }
+    .list-o-projects li{
+        text-decoration: underline;
+        font-family:VT323;
+    }
+    .twitch-text{
+        display: inline;
+        font-size: 2rem;
+        width: 50rem;
+        float: right;
+    }
+/* Id css starts here */
+    #page-navigation {
+        position: fixed;
+        z-index: 1;
+    }
+
+    #about-me-jumbotron {
+        background: lightblue;
+        margin-top: 15rem;
+    }
+
+    
+    #twitch-embed{
+        position: relative;
+        margin-left: 0.2rem;
+        margin-top: .3rem;
+    }
+
+
+
+    #projects-header {
+        text-align: center;
+        border-bottom: 2rem solid #015883;
+    }
+
+    #projects-wrapper{
+        margin: 10rem 0 10rem 0;
+    }
+    
+    #twitch-logo{
+        position: relative;
+        height: 4rem;
+        z-index: inherit;
+        top: -0.8rem;
+    }
+
+    #footer-jumbotron{
+        position: relative;
+        bottom: -3rem;
+        margin-bottom: 0px;
+        margin-top: 1rem;
+        background-color: antiquewhite;
+        height: 10rem;
+
+    }
+
+    #contact-header{
+        margin-bottom: 0;
+        text-align: center;
+        display: block;
+    }
+
+    #twitch-hosting{
+        position: relative;
+        float:right;
+        margin-right: 0.5rem;
+        width: 38%;
+        top: -35rem;
+    }
