@@ -6,6 +6,11 @@ jQuery(document).ready(function ($) {
         theme: "dark"
         
     })
+
+    $("[data-toggle='toggle']").click(function() {
+        var selector = $(this).data("target");
+        $(selector).toggleClass('in');
+    });
 // using code from https://css-tricks.com/snippets/jquery/smooth-scrolling/ refrence this moving forward
     $(function() {
        // Select all links with hashes

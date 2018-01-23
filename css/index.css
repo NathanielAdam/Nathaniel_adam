@@ -32,7 +32,15 @@
     .nav-text{
         font-size: 2rem;
     }
-
+    .sidebar{
+        height: 5rem;
+        width: 5rem;
+        background-color: black;
+        position: fixed;
+        top: 4rem;
+        border-radius: 100%;
+        
+    }
     .embeded-video{
         position: relative;
         left:20rem;
@@ -44,6 +52,9 @@
     .about-info p {
         line-height: 2rem;
         font-size: 1.5rem;
+    }
+    .project-row-seperator{
+        
     }
     .project-img{
         max-height: 200px;
@@ -68,6 +79,7 @@
         border-radius: 10%;
         text-align: center;
         margin-right: 6rem;
+        margin-bottom: 5rem;
         
     }
     .p-lots-of-words {
@@ -164,4 +176,80 @@
         margin-left:35%;
         text-align: center;
         font-size: 2rem;
+    }
+    
+
+/* collapse js from  https://jsfiddle.net/KyleMit/S9hhP/ */
+
+    #collapse-list {
+        -webkit-transition: width 1s ease;
+        -moz-transition: width 1s ease;
+        -o-transition: width 1s ease;
+        transition: width 1s ease;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        background: transparent;
+        vertical-align: middle;
+        line-height: 30px;
+        height: 7rem;
+        z-index: 1;
+        width: 0px;
+    }
+    #collapse-list.in {
+        width: 32rem;
+        border-bottom: 1px solid black;
+        transition: width 1s ease;
+    }
+/* Target the wrapper to move it */
+    #collapse-wrapper{
+        position: fixed;
+        top: 4rem;
+        border: none;
+        z-index: 1;
+    }
+    #button-collapse{
+        border: none;
+        background-color: transparent;
+        
+    }
+    @keyframes spin {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    #collapse-image{
+        border-radius: 100%;
+
+    }
+    #collapse-image:hover{
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    
+
+    
+/* Odd thing with Id's, used classes to select Icons */
+    .language-icon{
+        height: 5rem;
+        width: 5rem;
+        margin-top: 1.5rem;
+    }
+    .collapse-item{
+        background: transparent;
+        border: none;
+        margin-top: 0;
+    }
+    #collapse-info{
+        position: relative;
+        float: left;
+        margin-top: 3.5rem;
+        
     }
