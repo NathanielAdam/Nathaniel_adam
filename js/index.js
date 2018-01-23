@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
         width:1280,
         height:720,
         channel: "grizmoore",
+        theme: "dark"
         
     })
 // using code from https://css-tricks.com/snippets/jquery/smooth-scrolling/ refrence this moving forward
