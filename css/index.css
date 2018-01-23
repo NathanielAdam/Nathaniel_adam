@@ -14,8 +14,7 @@
         color: black;
         text-align: center;
     } 
-    header{
-        width: 100%;
+
     }
     footer{
         margin-bottom: 0;
@@ -119,7 +118,7 @@
     
     #twitch-embed{
         position: relative;
-        width: 100%;
+        
         text-align: center;
     }
     #twitch-jumbotron{
@@ -239,7 +238,7 @@
     
 
     
-/* Odd thing with Id's, used classes to select Icons */
+
     .language-icon{
         height: 5rem;
         width: 5rem;
@@ -253,6 +252,7 @@
     #collapse-info{
         position: relative;
         float: left;
-        margin-top: 3.5rem;
-        
+        margin-top: 1.5rem;
+        color: bisque;
+        background-color: rgba(0, 0, 0, 9.5)
     }
