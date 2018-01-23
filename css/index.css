@@ -1,4 +1,9 @@
 /* Element css starts here */
+   
+    *{
+        cursor: url("https://i.imgur.com/MllobKx.png"), auto;
+    }
+
     body{
     background-image:url("http://www.seerinteractive.com/wp-content/uploads/2014/12/Seer-Blog-event-tracking-explained-1440x700.jpg");
     background-size: 100%;
@@ -23,8 +28,9 @@
 
 /* Class css starts here */
     .jumbotron{
-        background-color: #FF4500;
+        background-color:rgba(245, 69, 0, 0.9);
         margin-bottom: 10rem;
+        
     }
 
 
@@ -37,37 +43,51 @@
         margin-left: 5rem;
         background-color: aliceblue;
     }
-
+    .about-header h2 {
+        font-size: 4rem;
+    }
+    .about-info p {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
     .project-img{
         max-height: 200px;
         max-width: 200px;
         border-radius: 10%;
-        transition: smooth;
+        transition: 1s;
+
     }
-    .project-img:hover{
+    .project-item:hover{
         transform: scale(1.2);
+        transition:1s;
+        background-color: #017A16;
     }
+    .project-item{
+        transform:scale(1.0);
+        transition:1s;
+    }
+
     .project-item{
         position: relative;
         display: inline-block;
-
-    }
-
-    
-    .project-item h4{
-        position: relative;
+        border: .5rem solid #017A16;
+        border-radius: 10%;
         text-align: center;
-        margin-top: 2rem;
-        left: -3rem;
-        width: 18rem;
+        margin-right: 6rem;
+        
     }
+
+     
+
     
     .list-o-projects {
         margin-top: 2rem;
+        
     }
     .list-o-projects li{
         text-decoration: underline;
         font-family:VT323;
+        
     }
     .twitch-text{
         display: inline;
@@ -82,7 +102,7 @@
     }
 
     #about-me-jumbotron {
-        background: lightblue;
+        background: rgba(13, 131, 1, 0.95);
         margin-top: 15rem;
     }
 
@@ -95,15 +115,10 @@
 
 
 
-    #projects-header {
-        text-align: center;
-        border-bottom: 2rem solid #015883;
-    }
 
-    #projects-wrapper{
-        margin: 10rem 0 10rem 0;
+    #twitch-jumbotron{
+        background-color: rgba(147, 99, 236, 0.95)
     }
-    
     #twitch-logo{
         position: relative;
         height: 4rem;
@@ -117,7 +132,7 @@
         margin-bottom: 0px;
         margin-top: 1rem;
         background-color: antiquewhite;
-        height: 10rem;
+        height: 20rem;
 
     }
 
@@ -134,3 +149,10 @@
         width: 38%;
         top: -35rem;
     }
+    #about-nav{
+    background-color:  red;
+    
+    }
+    #whole-page {
+        
+      }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <link href="https://fonts.googleapis.com/css?family=Oswald|Poppins|VT323" rel="stylesheet">
     <link class="icon-img" rel="icon" type="image/png" href="https://lh3.googleusercontent.com/-2QJaNQMIIOI/AAAAAAAAAAI/AAAAAAAAANs/dSAZFYYV9io/s60-p-rw-no/photo.jpg">
@@ -10,13 +10,13 @@
     <!--endbuild-->
     <title>Nathaniel J. Adam</title>
 </head>
-<body>
+<body id="whole-page">
     <!-- Navigation on page -->
     <div class="nav justify-content-center">
         <ul class="  nav nav-pills nav-fill" id="page-navigation">
-            <li class="nav-item navigation-button" id="about-nav"><a class="nav-link active" href="#about-me-section">About</a></li>
+            <li class="nav-item navigation-button" ><a class="nav-link active" id="about-nav" href="#about-me-section">About</a></li>
             <li class="nav-item navigation-button" id="projects-nav"><a class="nav-link active" href="#projects-wrapper">Projects</a></li>
-            <li class="nav-item navigation-button" id="projects-nav"><a class="nav-link active" href="#twitch-embed">Twitch</a></li>
+            <li class="nav-item navigation-button" id="twitch-nav"><a class="nav-link active" href="#twitch-embed">Twitch</a></li>
             <li class="nav-item btn-dark navigation-button" id="contact-nav"><a class="nav-link active" href="#footer-jumbotron">contact Info</a> </li>
         </ul>
     </div>
@@ -40,7 +40,7 @@
         <div class="about-content">
             <div class="nav justify-content-center jumbotron jumbotron-fluid" id="about-me-jumbotron">
                 <div class="about-header">
-                    <h2 class="">About Me</h2>
+                    <h2>About Me</h2>
                 </div>
                 <div class="row justify-content-center">
                     <div class="about-info col-4">
@@ -48,11 +48,11 @@
                     </div>
 
                     <div class="about-info col-4" id="center-about-paragraph">
-                        <p>As a worker I would call myself something of an obsessive, or in other words I will work on something until I can be proud of not only the project, but also the steps that took me there.</p>
+                        <p>As a worker I would call myself something of an obsessive, or in other words I will work on something until I can be proud of not only the project, but also the steps that took me there.Obviously I am not the best designer, but I will always work to better that part of myself.</p>
                     </div>
 
                     <div class="about-info col-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe similique soluta quae? Molestias illum fugiat omnis ab, reiciendis nihil a ex natus tempora perferendis laudantium mollitia repudiandae. Nam, amet repudiandae.</p>
+                        <p>In my freetime I'm a gamer. These days it's mostly vidoe-games, but I still enjoy card games, and table top. </p>
                     </div>
                 </div>
             </div>    
@@ -71,7 +71,7 @@
                                 <div class="project-container">
                                     
                                     <a href="https://grizmoore.github.io/First-Webpage/" target="_blank">
-                                        <img src="https://i.imgur.com/ZFH2s5B.png" alt="#" class="project-img">
+                                        <img src="https://i.imgur.com/ZFH2s5B.png" alt="#" class="img-fluid project-img">
                                     </a>
                                     <h4 class="project-lable">Store Webpage</h4>
                                 </div>
@@ -160,7 +160,13 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-4 info-wrapper">
-                            <h4><strong>Email:</strong>  nathanieladam95@gmail.com</h4>
+                            <h4><strong>Email:</strong>
+                            <form action="https://formspree.io/nathanieladam95@gmail.com"method="POST" id="email-form">
+                                <input type="text" name="name" placeholder="Your Name">
+                                <input type="email" name="_replyto" placeholder="Your Email">
+                                <textarea placeholder="Your Message"></textarea>
+                                <input type="submit" value="Send">
+                            </form>
                         </div>
                         <div class="col-4 info-wrapper">
                             <h4><strong>Phone:</strong><br>  (317)-313-8174</h4>
