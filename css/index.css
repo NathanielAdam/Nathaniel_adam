@@ -6,6 +6,8 @@
         background-image:url("http://www.seerinteractive.com/wp-content/uploads/2014/12/Seer-Blog-event-tracking-explained-1440x700.jpg");
         background-size: 100%;
         position: absolute;
+        height: 100%;
+        width: 100%;
     }
     h1, h2,h3, h4, h5, h6, p, button, a {
         font-family: Oswald;
@@ -13,7 +15,7 @@
         text-align: center;
     } 
     footer{
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
     nav{
         position: fixed;
@@ -27,7 +29,7 @@
     .jumbotron{
         background-color:rgba(250, 250, 250, 0.9);
         margin-bottom: 10rem;
-        
+        width: 100%;
     }
     .nav-text{
         font-size: 2rem;
@@ -53,9 +55,7 @@
         line-height: 2rem;
         font-size: 1.5rem;
     }
-    .project-row-seperator{
-        
-    }
+
     .project-img{
         max-height: 200px;
         max-width: 200px;
