@@ -7,7 +7,8 @@
         background-size: 100%;
         position: absolute;
         height: 100%;
-        width: 100%;
+        width:fill;
+        overflow-x:hidden; 
     }
     h1, h2,h3, h4, h5, h6, p, button, a {
         font-family: Oswald;
@@ -15,7 +16,7 @@
         text-align: center;
     } 
 
-    }
+    
     footer{
         margin-bottom: 0;
     }
@@ -23,6 +24,7 @@
         position: fixed;
         width: 100%;
         z-index: 1;
+        overflow-x: auto;
     }
     span a {
         text-decoration: underline;
@@ -31,6 +33,7 @@
     .jumbotron{
         background-color:rgba(250, 250, 250, 0.9);
         margin-bottom: 10rem;
+        margin-right: 0;
         width: 100%;
     }
     .nav-text{
@@ -55,7 +58,7 @@
     }
     .about-info p {
         line-height: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.0rem;
     }
 
     .project-img{
@@ -85,8 +88,8 @@
         
     }
     .p-lots-of-words {
-        width: 70%;
-        padding-left:30%;
+        width: 95%;
+        margin-left: 2%;
         
     }
     .list-o-projects {
@@ -114,7 +117,7 @@
         background-color: rgba(245, 69, 0, 0.9);
         margin-top: 15rem;
     }
-    #projects-wrapper{}
+    
     
     #twitch-embed{
         position: relative;
