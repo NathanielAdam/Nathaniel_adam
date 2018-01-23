@@ -16,8 +16,9 @@
     p,
     button,
     a {
-        font-family: poppins;
+        font-family: Oswald;
         color: black;
+        text-align: center;
     } 
     footer{
         margin-bottom: 0px;
@@ -27,10 +28,12 @@
         width: 100%;
         z-index: 1;
     }
-
+    span a {
+        text-decoration: underline;
+    }
 /* Class css starts here */
     .jumbotron{
-        background-color:rgba(250, 250,, 0.9);
+        background-color:rgba(250, 250, 250, 0.9);
         margin-bottom: 10rem;
         
     }
@@ -41,7 +44,6 @@
         left:20rem;
         
     }
-
     .about-header h2 {
         font-size: 4rem;
     }
@@ -75,7 +77,11 @@
         margin-right: 6rem;
         
     }
-
+    .p-lots-of-words {
+        width: 80%;
+        padding-left:20%;
+        line-height: 100px;
+    }
      
 
     
@@ -88,11 +94,8 @@
         font-family:VT323;
         
     }
-    .twitch-text{
-        display: inline;
-        font-size: 2rem;
-        width: 50rem;
-        float: right;
+    .why-twitch{
+        text-align: center;
     }
     .info-wrapper{
         margin-right: 1.5rem;
@@ -163,11 +166,23 @@
     }
 
     #contact-button{
-
+        background-color: rgb(250, 250, 250);
+        color: black;
     }
-
-
-/* Css for mobile */
+    #why-header{
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: VT323;
+    }
+    #content-twitch{
+        font-family: VT323;
+        position: relative;
+        width: 30%;
+        margin-left:35%;
+        text-align: center;
+        font-size: 2rem;
+    }
+/* Css for mobile, will work on later*/
     /* ----------- HTC One ----------- */
 
     /* Portrait and Landscape */
