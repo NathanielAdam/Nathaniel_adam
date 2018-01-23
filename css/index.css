@@ -19,7 +19,7 @@
     button,
     a {
         font-family: poppins;
-        color: black
+        color: black;
     } 
     footer{
         margin-bottom: 0px;
@@ -153,6 +153,11 @@
     background-color:  red;
     
     }
-    #whole-page {
-        
-      }
+
+
+
+
+/* Css for mobile */
+    @media {
+        max-width: 700px;
+    }
