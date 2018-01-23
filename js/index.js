@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
     new Twitch.Embed("twitch-embed", {
-        width:1280,
-        height:720,
+        width:1920,
+        height:1080,
         channel: "grizmoore",
         theme: "dark"
         

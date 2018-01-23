@@ -12,19 +12,19 @@
 </head>
 <body id="whole-page">
     <!-- Navigation on page -->
-    <div class="nav justify-content-center">
-        <ul class="  nav nav-pills nav-fill" id="page-navigation">
-            <li class="nav-item navigation-button" ><a class="nav-link active" id="about-nav" href="#about-me-section">About</a></li>
-            <li class="nav-item navigation-button" id="projects-nav"><a class="nav-link active" href="#projects-wrapper">Projects</a></li>
-            <li class="nav-item navigation-button" id="twitch-nav"><a class="nav-link active" href="#twitch-embed">Twitch</a></li>
-            <li class="nav-item btn-dark navigation-button" id="contact-nav"><a class="nav-link active" href="#footer-jumbotron">contact Info</a> </li>
-        </ul>
-    </div>
+    
+    <header>
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-item nav-link active" id="about-button" href="#about-me-section">About</a>
+                <a class="nav-item nav-link active" id="projects-button" href="#projects-wrapper">Projects</a>
+                <a class="nav-item nav-link active" id="twitch-button" href="#twitch-jumbotron">Twitch</a>
+                <a class="nav-item nav-link active" id="contact-button" href="#footer-jumbotron">Contact Me</a>
+            </nav>
+    </header>
 
 
 
                                                         <!-- Starting point -->
-    <header ></header>
         <div class="nav justify-content-center jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-2">Nathanie J. Adam</h1>
@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="about-info col-4">
-                        <p>In my freetime I'm a gamer. These days it's mostly vidoe-games, but I still enjoy card games, and table top. </p>
+                        <p>In my freetime I'm a gamer. These days it's mostly vidoe-games, but I still enjoy card games, and table top. Games have always been my favorite way to connect with people, and will continue to be in the future. </p>
                     </div>
                 </div>
             </div>    
@@ -100,6 +100,7 @@
                         </li>
                     </ul>
                 </div>
+                <h3>Check out my GitHub Account <span><a href="https://github.com/grizmoore">here</a></span> for any projects I could be working on.</h3>
             </div>
         </div>
     </div>
@@ -107,7 +108,6 @@
                         <!-- My Twitch Feed  -->
     <div class="jumbotron jumbotron-fluid" id="twitch-jumbotron">
         <h1>My <img src="https://i.imgur.com/V8UW29j.png" alt="twitch" id="twitch-logo"> Feed</h1> 
-        <p class="twitch-text">Stop by and chat with me, or just enjoy the stream. If I'm offline, then one of these other channles will probably be available.</p>
         <div class="embedded-video" id="twitch-embed"></div>
 
 
@@ -159,7 +159,7 @@
                     </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-4 info-wrapper">
+                        <div class="col-3 info-wrapper">
                             <h4><strong>Email:</strong>
                             <form action="https://formspree.io/nathanieladam95@gmail.com"method="POST" id="email-form">
                                 <input type="text" name="name" placeholder="Your Name">
@@ -168,12 +168,13 @@
                                 <input type="submit" value="Send">
                             </form>
                         </div>
-                        <div class="col-4 info-wrapper">
+                        <div class="col-3 info-wrapper">
                             <h4><strong>Phone:</strong><br>  (317)-313-8174</h4>
                         </div>
-                        <div class="col-4 info-wrapper">
+                        <div class="col-3 info-wrapper">
                             <h4><strong>Linkedin:</strong>  https://www.linkedin.com/feed/</h4>
                         </div>
+                        
                     </div>
                 </div>
             </div>
