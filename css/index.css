@@ -210,58 +210,64 @@
         user-select: none;
         outline: none;
     }
-/* Target the wrapper to move it */
-    #collapse-wrapper{
-        position: fixed;
-        top: 6rem;
-        border: none;
-        z-index: 1;
-        outline: none;
-    }
-    #button-collapse{
-        border: none;
-        background-color: transparent;
-        outline: none;
-        
-    }
-    @keyframes spin {
-        0%{transform: rotate(0deg);}
-        80%{transform: rotate(390deg);}
-        100%{transform: rotate(360deg);}
-    }
-    #collapse-image{
-        border-radius: 100%;
-        position: relative;
-        height: 6rem;
-        width: 6rem;
-        top:0.8rem;
-        outline: none;
-    }
-    #collapse-image:hover{
-        animation-name: spin;
-        animation-duration: 800ms;
-        animation-iteration-count: 1;
-        animation-timing-function: linear;
-    }
-
-    
-
-    
-
-    .language-icon{
-        height: 5rem;
-        width: 5rem;
-        margin-top: 1.5rem;
-    }
-    .collapse-item{
-        background: transparent;
-        border: none;
-        margin-top: 0;
-    }
-    #collapse-info{
-        position: relative;
-        float: left;
-        margin-top: 1.5rem;
-        color: bisque;
-        background-color: rgba(0, 0, 0, 9.5)
-    }
+    /* Target the wrapper to move it */
+        #collapse-wrapper{
+            position: fixed;
+            top: 6rem;
+            border: none;
+            z-index: 1;
+            outline: none;
+        }
+        #button-collapse{
+            border: none;
+            background-color: transparent;
+            outline: none;
+            
+        }
+        @keyframes spin {
+            0%{transform: rotate(0deg);}
+            80%{transform: rotate(390deg);}
+            100%{transform: rotate(360deg);}
+        }
+        @keyframes spin-reverse {
+            0%{transform: rotate(360deg);}
+            80%{transform: rotate(390deg);}
+            100%{transform: rotate(0deg);}
+        }
+        #collapse-image{
+            border-radius: 100%;
+            position: relative;
+            height: 6rem;
+            width: 6rem;
+            top:0.8rem;
+            outline: none;
+        }
+        .spin-animate{
+            animation-name: spin;
+            animation-duration: 800ms;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+        .spin-animate-reverse{
+            animation-name: spin;
+            animation-duration: 800ms;
+            animation-iteration-count: 1;
+            animation-direction: reverse;
+        }
+        .language-icon{
+            height: 5rem;
+            width: 5rem;
+            margin-top: 1.5rem;
+        }
+        .collapse-item{
+            background: transparent;
+            border: none;
+            margin-top: 0;
+        }
+        #collapse-info{
+            position: relative;
+            float: left;
+            margin-top: 1.5rem;
+            color: bisque;
+            background-color: rgba(0, 0, 0, 9.5)
+        }

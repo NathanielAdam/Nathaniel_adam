@@ -6,12 +6,20 @@ jQuery(document).ready(function ($) {
         theme: "dark"
         
     })
-
+console.log($('#collapse-image'))
     $("[data-toggle='toggle']").click(function() {
         var selector = $(this).data("target");
         $(selector).toggleClass('in');
         
     });
+
+    $("#collapse-image").click(function () {
+        let collapseToggle = $(this).className
+        if($(collapseToggle === false)){
+            
+            $(this).toggleClass('spin-animate')
+        } 
+    })
 // using code from https://css-tricks.com/snippets/jquery/smooth-scrolling/ refrence this moving forward
     $(function() {
        // Select all links with hashes
