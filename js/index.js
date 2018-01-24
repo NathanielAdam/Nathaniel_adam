@@ -15,7 +15,7 @@ console.log($('#collapse-image'))
 
     $("#collapse-image").click(function () {
         let collapseToggle = $(this).className
-        if($(collapseToggle === false)){
+        if($(collapseToggle == "")){
             
             $(this).toggleClass('spin-animate')
         } 
