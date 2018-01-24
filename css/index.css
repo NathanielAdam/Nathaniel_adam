@@ -6,8 +6,8 @@
         background-image:url("http://www.seerinteractive.com/wp-content/uploads/2014/12/Seer-Blog-event-tracking-explained-1440x700.jpg");
         background-size: 100%;
         position: absolute;
-        height: 100%;
-        width:fill;
+        height:auto;
+        width:auto;
         overflow-x:hidden; 
     }
     h1, h2,h3, h4, h5, h6, p, button, a {
@@ -131,7 +131,7 @@
         position: relative;
         height: 4rem;
         z-index: inherit;
-        top: -0.8rem;
+        
     }
     #footer-jumbotron{
         position: relative;
@@ -203,38 +203,44 @@
         width: 0px;
     }
     #collapse-list.in {
-        width: 32rem;
+        width: 38rem;
         border-bottom: 1px solid black;
         transition: width 1s ease;
+        overflow-x: auto;
+        user-select: none;
+        outline: none;
     }
 /* Target the wrapper to move it */
     #collapse-wrapper{
         position: fixed;
-        top: 4rem;
+        top: 6rem;
         border: none;
         z-index: 1;
+        outline: none;
     }
     #button-collapse{
         border: none;
         background-color: transparent;
+        outline: none;
         
     }
     @keyframes spin {
-        from{
-            transform: rotate(0deg);
-        }
-        to{
-            transform: rotate(360deg);
-        }
+        0%{transform: rotate(0deg);}
+        80%{transform: rotate(390deg);}
+        100%{transform: rotate(360deg);}
     }
     #collapse-image{
         border-radius: 100%;
-
+        position: relative;
+        height: 6rem;
+        width: 6rem;
+        top:0.8rem;
+        outline: none;
     }
     #collapse-image:hover{
         animation-name: spin;
-        animation-duration: 5000ms;
-        animation-iteration-count: infinite;
+        animation-duration: 800ms;
+        animation-iteration-count: 1;
         animation-timing-function: linear;
     }
 
