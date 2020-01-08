@@ -1,16 +1,25 @@
 jQuery(document).ready(function ($) {
     new Twitch.Embed("twitch-embed", {
-        width:1920,
-        height:1080,
+        width:1280,
+        height:720,
         channel: "grizmoore",
         theme: "dark"
         
     })
-
+console.log($('#collapse-image'))
     $("[data-toggle='toggle']").click(function() {
         var selector = $(this).data("target");
         $(selector).toggleClass('in');
+        
     });
+
+    $("#collapse-image").click(function () {
+        let collapseToggle = $(this).className
+        if($(collapseToggle == "")){
+            
+            $(this).toggleClass('spin-animate')
+        } 
+    })
 // using code from https://css-tricks.com/snippets/jquery/smooth-scrolling/ refrence this moving forward
     $(function() {
        // Select all links with hashes
